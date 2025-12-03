@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { Event, Venue } from '../types';
+import type { Event, Venue } from '../types';
 import * as db from '../services/dbService';
 
 interface DataContextType {

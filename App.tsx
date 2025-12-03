@@ -1,6 +1,6 @@
 import React, { useState, useEffect, createContext, useContext } from 'react';
 import { DataProvider, useData } from './contexts/DataContext';
-import { User, View, Event, Attendee, Venue } from './types';
+import type { User, View, Event, Attendee, Venue } from './types';
 import * as db from './services/dbService';
 import { Button, Input, Modal, Select, Badge } from './components/UI';
 

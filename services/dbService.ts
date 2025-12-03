@@ -1,4 +1,4 @@
-import { Event, Venue, User, Attendee } from '../types';
+import type { Event, Venue, User, Attendee } from '../types';
 
 const KEYS = {
   EVENTS: 'cmrnxt_events',
