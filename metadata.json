@@ -1,0 +1,5 @@
+{
+  "name": "CMR NXT app",
+  "description": "A college event management system with role-based access, real-time sync, and calendar visualization.",
+  "requestFramePermissions": []
+}
