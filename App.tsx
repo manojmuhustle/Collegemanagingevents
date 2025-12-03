@@ -200,9 +200,9 @@ const EventForm: React.FC<{ onClose: () => void; eventToEdit?: Event }> = ({ onC
           />
           <div className="flex flex-col gap-1">
              <label className="text-sm font-medium text-slate-300">Max Attendees</label>
-             <div className="flex items-center gap-3 mt-1">
+             <div className="flex items-center gap-2 mt-1">
                <input 
-                 type="range" min="10" max="1000" step="5" 
+                 type="range" min="10" max="1000" step="10" 
                  className="flex-grow accent-brand-primary h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer"
                  value={formData.maxAttendees}
                  onChange={e => setFormData({...formData, maxAttendees: parseInt(e.target.value)})}
@@ -235,7 +235,7 @@ const EventForm: React.FC<{ onClose: () => void; eventToEdit?: Event }> = ({ onC
                  <button 
                    type="button"
                    onClick={checkTimeSlots}
-                   className="px-3 py-2 bg-slate-800 border border-slate-700 rounded-lg text-brand-primary hover:bg-slate-700 hover:text-white transition-colors"
+                   className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-slate-700 border border-slate-600 rounded-lg text-brand-primary hover:bg-slate-600 hover:text-white transition-all shadow-md"
                    title="Find free time slots on this date"
                  >
                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -264,7 +264,7 @@ const EventForm: React.FC<{ onClose: () => void; eventToEdit?: Event }> = ({ onC
                    <button 
                      type="button"
                      onClick={checkDates}
-                     className="px-3 py-2 bg-slate-800 border border-slate-700 rounded-lg text-brand-secondary hover:bg-slate-700 hover:text-white transition-colors"
+                     className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-slate-700 border border-slate-600 rounded-lg text-brand-secondary hover:bg-slate-600 hover:text-white transition-all shadow-md"
                      title="Find free dates for this time"
                    >
                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
